@@ -1,0 +1,89 @@
+header {
+    background-color: #fff;
+    padding: 30px;
+    font-family: "Poppins", serif;
+    margin-top: 0px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    width: auto; 
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    background-color: #D7431D ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    ;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* para pantallas pequeñas como móviles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /*hace que todo quede en una sola columna*/
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin: 10px 0; 
+  }
+
+  .cta-button {
+    margin-top: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+
+  .nav-links a {
+    font-size: 16px; 
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 14px; 
+  }
+}
